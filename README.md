@@ -186,3 +186,48 @@ Manages the secure handling of payments for bookings. This includes payment init
 5. Review System
 
 Allows users to leave feedback by creating, editing, viewing, or deleting reviews on properties they’ve stayed at. This helps maintain transparency and trust between users and hosts by showcasing property quality and guest experiences.
+
+# API Security
+
+1. Authentication and Authorization
+
+Authentication verifies the identity of users, while authorization ensures they can only access resources and perform actions permitted by their roles.
+We use JSON Web Tokens (JWT) to implement stateless, secure authentication across APIs. This prevents unauthorized access and protects private data like user profiles and bookings.
+
+Why it matters:
+To protect user accounts, restrict access to sensitive data, and prevent unauthorized actions like deleting listings or accessing payment history.
+
+2. Input Validation
+
+All user inputs are validated for type, format, and range to prevent malicious data injection. For example, numeric inputs are checked for valid ranges, and strings are sanitized.
+
+Why it matters:
+Prevents common attacks such as SQL injection, cross-site scripting (XSS), and data corruption by ensuring that only safe and expected data is processed.
+
+3. Rate Limiting
+
+Rate limiting restricts how many requests a client can make within a set time period. This helps prevent abuse of the system and brute-force attacks on authentication endpoints.
+
+Why it matters:
+Mitigates Denial of Service (DoS) attacks, protects server resources, and enhances platform stability.
+
+4. Secure Headers
+
+HTTP security headers such as Content-Security-Policy, X-Frame-Options, and X-Content-Type-Options will be implemented to strengthen the application against front-end attacks.
+
+Why it matters:
+Reduces the risk of clickjacking, content spoofing, and XSS attacks, ensuring safer client-side behavior.
+
+5. HTTPS with SSL/TLS Encryption
+
+All API traffic and web interactions will be secured via HTTPS using SSL/TLS certificates, ensuring that data in transit is encrypted and cannot be intercepted.
+
+Why it matters:
+Protects sensitive data like login credentials and payment information from eavesdropping, tampering, and man-in-the-middle attacks.
+
+6. API Security Testing
+
+Regular automated and manual security testing will be conducted using tools like OWASP ZAP or Postman Security Tests to detect vulnerabilities early.
+
+Why it matters:
+Ensures known security issues are identified and mitigated before deployment, reducing the risk of data breaches or exploitation.
