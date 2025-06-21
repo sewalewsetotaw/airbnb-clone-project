@@ -72,3 +72,95 @@ A containerization tool that ensures consistent development and production envir
 
 CI/CD Pipelines
 Automated workflows (e.g., using GitHub Actions, GitLab CI, Jenkins) for testing, building, and deploying code changes quickly and reliably.
+
+# Database Design
+
+1. Users
+
+Represents people who can own properties, make bookings, write reviews, and make payments.
+
+Key Fields:
+user_id: Unique identifier
+full_name: Full name of the user
+username: Chosen display name
+email: User’s email address
+password: password for authentication
+
+Relationships:
+
+    A user can own multiple properties
+    A user can make multiple bookings
+    A user can write multiple reviews
+    A user can make multiple payments
+
+2. Properties
+
+Represents places listed for rent (e.g., houses, apartments).
+
+Key Fields:
+
+    property_id: Unique identifier
+    title: Name of the listing
+    location: Address or general location
+    description: Details about the property
+    owner_id: Foreign key to the Users
+
+Relationships:
+
+    A property is owned by a user
+    A property can have multiple bookings
+    A property can have multiple reviews
+
+3. Bookings
+
+Represents a reservation of a property by a user.
+
+Key Fields:
+
+    booking_id: Unique identifier
+    check_in: Check-in date
+    check_out: Check-out date
+    price: Total booking cost
+    user_id: Foreign key to Users
+    property_id: Foreign key to Properties
+
+Relationships:
+
+    A booking is made by a user
+    A booking is for a specific property
+    A booking can trigger a payment
+
+4. Reviews
+
+Represents user feedback on a property.
+
+Key Fields:
+
+    review_id: Unique identifier
+    comment: User’s comment
+    rate: Numerical rating (e.g., 1–5 stars)
+    user_id: Foreign key to Users
+    property_id: Foreign key to Properties
+
+Relationships:
+
+    A review is written by a user
+    A review is for a specific property
+
+5. Payments
+
+Represents transactions made for bookings.
+
+Key Fields:
+
+    payment_id: Unique identifier
+    amount: Payment amount
+    payment_date: Date of transaction
+    status: Payment status (e.g., successful, pending)
+    booking_id: Foreign key to Bookings
+    user_id: Foreign key to Users
+
+Relationships:
+
+    A payment is made by a user
+    A payment is linked to a booking
