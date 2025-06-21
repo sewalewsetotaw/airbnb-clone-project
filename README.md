@@ -231,3 +231,32 @@ Regular automated and manual security testing will be conducted using tools like
 
 Why it matters:
 Ensures known security issues are identified and mitigated before deployment, reducing the risk of data breaches or exploitation.
+
+# CI/CD Pipeline
+
+CI/CD is a key practice in this project, ensuring high code quality, fast delivery, and minimal production issues.
+
+Continuous Integration (CI)
+
+Developers frequently merge code into a shared repository. Each change triggers automated builds and tests—unit, linting, and basic functional tests—ensuring that code changes integrate smoothly and existing functionality remains intact.
+This early feedback loop helps catch bugs quickly and maintain a stable codebase.
+
+Continuous Delivery (CD)
+
+CD extends CI by preparing every change for potential release. It simulates a production environment using staging, where integration tests, regression tests, UI tests, and load tests are run.
+This helps developers catch environment-specific or integration-related bugs before they reach production. CD ensures that your application is always in a deployable state.
+
+Continuous Deployment
+
+The final stage of the pipeline, Continuous Deployment, automates the release of every successful build to production without manual approval. It eliminates human delays, allowing high-speed delivery of new features and bug fixes.
+Since there's no manual gate, it relies on robust test automation and monitoring to ensure reliability and confidence in each release.
+
+Tools and Technologies
+
+    GitHub Actions – Automates building, testing, and deployment workflows.
+
+    Docker & Docker Compose – Provides consistent environments for development, testing, and deployment.
+
+    PostgreSQL & Redis Containers – Used for integration and performance testing.
+
+    Staging Environment – Mirrors production for safe pre-release validation.
