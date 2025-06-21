@@ -164,3 +164,25 @@ Relationships:
 
     A payment is made by a user
     A payment is linked to a booking
+
+# Feature Breakdown
+
+1. User Management
+
+Handles the creation, updating, listing, and deletion of user accounts. This module also manages user authentication and authorization to ensure secure access to different parts of the platform based on user roles.
+
+2. Property Management
+
+Allows property owners to create, update, list, and delete property listings. This feature ensures that hosts can manage their accommodations effectively, keeping their listings up-to-date and visible to potential guests.
+
+3. Booking System
+
+Enables users to create, update, view, and cancel bookings for available properties. It ensures accurate reservation handling, prevents double-bookings, and manages availability based on check-in/check-out dates.
+
+4. Payment Processing
+
+Manages the secure handling of payments for bookings. This includes payment initiation, tracking transaction status, and ensuring that hosts receive payment for confirmed reservations.
+
+5. Review System
+
+Allows users to leave feedback by creating, editing, viewing, or deleting reviews on properties they’ve stayed at. This helps maintain transparency and trust between users and hosts by showcasing property quality and guest experiences.
