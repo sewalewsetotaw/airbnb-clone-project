@@ -46,3 +46,29 @@ Manages deployment, CI/CD pipelines, and system integration to ensure stable and
 
 QA Engineer
 Tests the application to ensure code quality, functionality, and compliance with project requirements and industry standards.
+
+# Technology Stack
+
+Django
+A high-level Python web framework used to build scalable backend services and RESTful APIs.
+
+Django REST Framework (DRF)
+A powerful toolkit built on top of Django, used for creating and managing RESTful APIs efficiently and securely.
+
+PostgreSQL
+A robust and scalable open-source relational database system used for structured data storage.
+
+GraphQL
+Enables flexible and efficient querying of data from the backend, allowing clients to request exactly what they need.
+
+Celery
+An asynchronous task queue used to handle background jobs such as email notifications, payment processing, etc.
+
+Redis
+An in-memory data store used for caching, session management, and as a message broker for Celery.
+
+Docker
+A containerization tool that ensures consistent development and production environments by packaging applications and dependencies together.
+
+CI/CD Pipelines
+Automated workflows (e.g., using GitHub Actions, GitLab CI, Jenkins) for testing, building, and deploying code changes quickly and reliably.
