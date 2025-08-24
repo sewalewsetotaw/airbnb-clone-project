@@ -115,9 +115,9 @@ Identifying color styles and typography early ensures **design consistency**, im
 
 - **DevOps Engineer**: Manages deployment, CI/CD pipelines, and system integration to ensure stable and efficient development and release processes.
 
-- **QA Engineer/Tester **: Tests the application to ensure code quality, functionality, and compliance with project requirements and industry standards.
-- **Product Owner** – Define requirements, prioritize features, represent stakeholders
-- **Scrum Master** – Facilitate agile processes, remove blockers, organize meetings
+- **QA Engineer/Tester**: Tests the application to ensure code quality, functionality, and compliance with project requirements and industry standards.
+- **Product Owner** : Define requirements, prioritize features, represent stakeholders
+- **Scrum Master** : Facilitate agile processes, remove blockers, organize meetings
 
 ---
 
