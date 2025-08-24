@@ -100,7 +100,7 @@ Identifying color styles and typography early ensures **design consistency**, im
 
 ---
 
-## 👥 Team Roles
+## 👥 Team Roles/ Project Roles and Responsibilities.
 
 - **Project Manager**: Oversees the project timeline and budget, ensures smooth team collaboration, and keeps the team motivated and on track.
 
